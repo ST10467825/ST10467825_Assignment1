@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 input=="evening" -> textViewOutput.text = "Sirloin Steak with Mashed Potatoes"
                 input=="midnight snack" -> textViewOutput.text = "Apple or Banana"
                 input=="snack" -> textViewOutput.text = "Kale chips"
-                else -> Toast.makeText(this, "Nice try dude, put something else in", Toast.LENGTH_LONG).show()
+                else -> Toast.makeText(this, "Nope, try again buddy!", Toast.LENGTH_LONG).show()
             } //don't question the food choice, i just went off the top of my head
             //from here, my 'reset suggestions' button clears the user input and suggestions box. figuring this out was difficult
             buttonClear.setOnClickListener{

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/food_in_pot"
+    android:background="@drawable/ghibli_food"
     tools:context=".MainActivity">
 
     <TextView
@@ -41,26 +41,29 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="276dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="26dp"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="147dp"
-        android:layout_marginEnd="109dp"
+        android:layout_marginEnd="70dp"
         android:layout_marginBottom="556dp"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="@font/bangers"
         android:text="What time of day is it?"
         android:textAlignment="textStart"
-        android:textColor="@color/design_default_color_secondary"
+        android:textColor="@android:color/holo_blue_bright"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonGenerate"
@@ -81,7 +84,7 @@
         android:id="@+id/buttonClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="121dp"
+        android:layout_marginStart="122dp"
         android:layout_marginTop="594dp"
         android:layout_marginEnd="122dp"
         android:layout_marginBottom="90dp"
@@ -92,7 +95,7 @@
         android:textColorLink="#F57F17"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -105,15 +108,17 @@
         android:layout_marginTop="407dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="247dp"
+        android:rotationX="0"
         android:text="Suggestions will show here"
         android:textAlignment="textStart"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="28sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
