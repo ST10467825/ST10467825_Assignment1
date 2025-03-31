@@ -1,4 +1,4 @@
-package com.example.st10467825_assignment1
+package za.co.varsitycollege.st10467825_assignment1
 
 import android.os.Bundle
 import android.widget.Button
