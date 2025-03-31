@@ -68,3 +68,6 @@ Question 2:
 ![image](https://github.com/user-attachments/assets/b2e4e7b1-a41c-4282-81b1-16954967a509)
 
 
+## Youtube Video
+
+[![Assignment 1]](https://youtu.be/Dxlrc6WEMDk)
