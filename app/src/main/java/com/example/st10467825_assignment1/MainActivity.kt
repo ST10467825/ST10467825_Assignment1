@@ -27,12 +27,15 @@ class MainActivity : AppCompatActivity() {
 
             when{//all my possible accepted inputs are stacked together as well for cleaner code
                 input=="morning" -> textViewOutput.text = "Omelette or Oats with fruit"
+                input=="breakfast" -> textViewOutput.text = "Omelette or Oats with fruit"
                 input=="mid morning" -> textViewOutput.text = "Bagel or Muffins"
                 input=="mid-morning" -> textViewOutput.text = "Greek Salad with Chicken Strips"
                 input=="afternoon" -> textViewOutput.text = "Chicken Mayo Sandwich"
+                input=="lunch" -> textViewOutput.text = "Chicken Mushroom Pie"
                 input=="mid afternoon" -> textViewOutput.text = "Steak and Kidney Pie"
                 input=="mid-afternoon" -> textViewOutput.text = "Milk Tart slice" //personal favourite
                 input=="evening" -> textViewOutput.text = "Sirloin Steak with Mashed Potatoes"
+                input=="dinner" -> textViewOutput.text = "250g Sirloin steak with mashed potatoes"
                 input=="midnight snack" -> textViewOutput.text = "Apple or Banana"
                 input=="snack" -> textViewOutput.text = "Kale chips"
                 else -> Toast.makeText(this, "Nope, try again buddy!", Toast.LENGTH_LONG).show()
