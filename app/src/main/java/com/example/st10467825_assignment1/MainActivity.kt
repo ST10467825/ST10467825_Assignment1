@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val buttonClear = findViewById<Button>(R.id.buttonClear)
         val textViewOutput = findViewById<TextView>(R.id.textViewOutput)
 
-        //this is where my button does something i think
+        //This section is the code that runs the buttonGenerate function, labeled 'Suggest'
         buttonGenerate.setOnClickListener{
             var input = editUserText.text.toString().trim().toLowerCase()
 
@@ -38,9 +38,11 @@ class MainActivity : AppCompatActivity() {
                 input=="dinner" -> textViewOutput.text = "250g Sirloin steak with mashed potatoes"
                 input=="midnight snack" -> textViewOutput.text = "Apple or Banana"
                 input=="snack" -> textViewOutput.text = "Kale chips"
+                //this next line, the else line, is where I have put my error toast which will only run
+                // if the user input is not accepted
                 else -> Toast.makeText(this, "Nope, try again buddy!", Toast.LENGTH_LONG).show()
             } //don't question the food choice, i just went off the top of my head
-            //from here, my 'reset suggestions' button clears the user input and suggestions box. figuring this out was difficult
+            //from here, my 'reset suggestions' button clears the user input and suggestions box.
             buttonClear.setOnClickListener{
                 editUserText.text.clear()
                 textViewOutput.text = ""
