@@ -1,0 +1,21 @@
+namr: Android Build
+on:
+  push:
+    branches: ["Master"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Check out repository
+      uses: actions/checkout@v2
+      -name: Set up JDK 17
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'zulu'  # or
+'temurin' if you prefer
+    java-version: 17
+  -name: Make gradlew
+execcutable
+  run: chmod +x gradelw
+-name: Build with Gradle
+  run: ./gradlew assembleDebug
