@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 input=="snack" -> textViewOutput.text = "Kale chips"
                 //this next line, the else line, is where I have put my error toast which will only run
                 // if the user input is not accepted
-                else -> Toast.makeText(this, "Nope, try again buddy!", Toast.LENGTH_LONG).show()
+                else -> Toast.makeText(this, "Try 'Morning', 'Lunch', or 'Snack!", Toast.LENGTH_LONG).show()
             } //don't question the food choice, i just went off the top of my head
             //from here, my 'reset suggestions' button clears the user input and suggestions box.
             buttonClear.setOnClickListener{
